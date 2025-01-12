@@ -9,3 +9,8 @@ const builder = createImageUrlBuilder({ projectId, dataset })
 export const urlFor = (source: SanityImageSource) => {
   return builder.image(source)
 }
+interface Params {
+  params: {
+    slug: string;
+  };
+}
